@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidFilestorage</string>
+    <string name="write_text">Ecrire dans un fichier</string>
+    <string name="read_text">Lire le fichier</string>
+    <string name="clear_text">Effacer</string>
+    <string name="Read_Warn">Pb de lecture !</string>
+    <string name="Write_Success">Le fichier a bien été sauvegardé !</string>
+</resources>
