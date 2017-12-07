@@ -9,10 +9,10 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:padding="5dp"
-        android:text="Android: Lecture/Ecriture dans un fichier local privé"
+        android:text="@string/description"
         android:textStyle="bold"
         android:textSize="28sp" />
 
@@ -20,8 +20,8 @@
         android:id="@+id/editText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="22dp"
         android:minLines="5"
@@ -40,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/write_text"
-        android:onClick="WriteBtn"
+        android:onClick="writeBtn"
         />
 
     <Button
@@ -48,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/clear_text"
-        android:onClick="ClearBtn"
+        android:onClick="clearBtn"
         />
 
     <Button
@@ -56,7 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/read_text"
-        android:onClick="ReadBtn"
+        android:onClick="readBtn"
        />
 
     </LinearLayout>

@@ -5,4 +5,5 @@
     <string name="clear_text">Effacer</string>
     <string name="Read_Warn">Pb de lecture !</string>
     <string name="Write_Success">Le fichier a bien été sauvegardé !</string>
+    <string name="description">Android: Lecture/Ecriture dans un fichier local privé</string>
 </resources>

@@ -22,7 +22,7 @@ public class MainActivity extends Activity {
     }
 
     /** Ecrire le texte vers le fichier */
-    public void WriteBtn(View v) {
+    public void writeBtn(View v) {
         try {
             FileOutputStream fileout=openFileOutput("monfichier.txt", MODE_PRIVATE);
             OutputStreamWriter outputWriter=new OutputStreamWriter(fileout);
@@ -38,11 +38,11 @@ public class MainActivity extends Activity {
     }
 
     /** Effacer l'EditText */
-    public void ClearBtn(View v) {
+    public void clearBtn(View v) {
         textmsg.setText("");
     }
     /** Lire le texte à partir du fichier */
-    public void ReadBtn(View v) {
+    public void readBtn(View v) {
         try {
             FileInputStream fileIn=openFileInput("monfichier.txt");
             InputStreamReader InputRead= new InputStreamReader(fileIn);
