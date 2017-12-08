@@ -25,9 +25,9 @@ public class MainActivity extends Activity {
     public void writeBtn(View v) {
         try {
             FileOutputStream fileout=openFileOutput("monfichier.txt", MODE_PRIVATE);
-            OutputStreamWriter outputWriter=new OutputStreamWriter(fileout);
-            outputWriter.write(textmsg.getText().toString());
-            outputWriter.close();
+            OutputStreamWriter writer=new OutputStreamWriter(fileout);
+            writer.write(textmsg.getText().toString());
+            writer.close();
             //affichage message
             Toast.makeText(getBaseContext(), R.string.Write_Success,
                     Toast.LENGTH_SHORT).show();
