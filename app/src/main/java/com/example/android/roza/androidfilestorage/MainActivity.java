@@ -44,19 +44,19 @@ public class MainActivity extends Activity {
     /** Lire le texte à partir du fichier */
     public void readBtn(View v) {
         try {
-            FileInputStream fileIn=openFileInput("monfichier.txt");
-            InputStreamReader InputRead= new InputStreamReader(fileIn);
+            FileInputStream fis=openFileInput("monfichier.txt");
+            InputStreamReader reader= new InputStreamReader(fis);
 
-            int charRead = fileIn.available();
+            int charRead = fis.available();
             char[] inputBuffer= new char[charRead];
-            final int read = InputRead.read(inputBuffer, 0, charRead);
+            final int read = reader.read(inputBuffer, 0, charRead);
             if (read>0) {
                 textmsg.setText(new String(inputBuffer));
             } else {
                 textmsg.setText(R.string.Read_Warn);
             }
 
-            InputRead.close();
+            reader.close();
 
         } catch (Exception e) {
             e.printStackTrace();
