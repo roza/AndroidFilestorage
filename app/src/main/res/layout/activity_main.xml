@@ -14,7 +14,7 @@
         android:padding="5dp"
         android:text="@string/description"
         android:textStyle="bold"
-        android:textSize="28sp" />
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/editText1"
@@ -30,6 +30,7 @@
     </EditText>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linear"
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -40,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/write_text"
-        android:onClick="writeBtn"
+        android:onClick="writeText"
         />
 
     <Button
@@ -48,7 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/clear_text"
-        android:onClick="clearBtn"
+        android:onClick="clearEdit"
         />
 
     <Button
@@ -56,8 +57,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/read_text"
-        android:onClick="readBtn"
+        android:onClick="readText"
        />
 
     </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"
+        android:id="@+id/linearLayout">
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/write_json"
+            android:onClick="writeJson"
+            />
+
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/read_json"
+            android:onClick="readJson"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:padding="5dp"
+        android:text="json" />
+
+
 </RelativeLayout>

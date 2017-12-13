@@ -6,4 +6,6 @@
     <string name="Read_Warn">Pb de lecture !</string>
     <string name="Write_Success">Le fichier a bien été sauvegardé !</string>
     <string name="description">Android: Lecture/Ecriture dans un fichier local privé</string>
+    <string name="read_json">Lire Json</string>
+    <string name="write_json">Ecrire Json</string>
 </resources>
