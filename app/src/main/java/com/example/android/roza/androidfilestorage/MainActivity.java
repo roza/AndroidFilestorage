@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        textmsg=(EditText)findViewById(R.id.editText1);
+        textmsg = findViewById(R.id.editText1);
     }
 
     /** Ecrire le texte vers le fichier */
@@ -44,10 +44,10 @@ public class MainActivity extends Activity {
     /** Lire le texte à partir du fichier */
     public void readBtn(View v) {
         try {
-            FileInputStream fis=openFileInput("monfichier.txt");
+            FileInputStream fis = openFileInput("monfichier.txt");
             InputStreamReader reader= new InputStreamReader(fis);
 
-            int charRead = fis.available();
+            int charRead = fis.available(); // taille du fichier
             char[] inputBuffer= new char[charRead];
             final int read = reader.read(inputBuffer, 0, charRead);
             if (read>0) {
